@@ -1,0 +1,248 @@
+/* MAIN DOCUMENT STYLE */
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif; /* Changing font */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Background.png"); /* Changing the background picture */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+}
+
+/* Green Heading (Raha International School) */
+.heading1{
+    font-size: 20px; /* Changing fontsize */
+    color: #1EA270; /* Changing font colour */
+    text-shadow: 1px 1px 3px #050505; /* Creating a shadow */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: FloatDown 1s ease-out forwards; /* Applying the animation */
+}
+
+/* Green Headng (Abu Dhabi - Gardens Campus) */
+.heading2{
+    font-size: 20px;
+    color: #1EA270;
+    text-shadow: 1px 1px 3px #050505;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    animation: FloatDown 0.5s ease-out forwards;
+}
+/* Animation floating down*/
+@keyframes FloatDown {
+    0%{
+        transform: translateY(-100px); /* Starts 100px above */
+    }
+    100%{
+        transform: translateY(0px); /* Ends at final position */
+    }
+}
+
+/* Video Preview */
+.VideoPreveiw{
+    width: 100%; /* Changing the size */
+    height: auto;
+    text-align: center; /* Aligning the object */
+    margin: auto;
+    box-shadow: 2px 2px 10px black;
+    animation: FloatLeft 0.75s ease-out forwards;
+}
+.LinkToVideo{
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: sans-serif;
+    color: #0050FF;
+    text-shadow: 1px 1px 1px#00184b;
+}
+/* Animation floating to the left */
+@keyframes FloatLeft {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* Basic Information About Raha */
+.Information{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    animation: FloatUp 0.5s ease-out forwards;
+}
+/* Animation floating up */
+@keyframes FloatUp {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* Raha info text styles */
+.Information > p{
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #B3B8B9 ;
+    text-shadow: 1px 1px 1px #050505;
+    box-shadow: 3px 3px 10px #050505;
+    background-color: rgba(52, 64, 66, 0.85); /* Using RGBA values to change opacity and colour */
+    width: 80%;
+    margin: 0 auto;
+    outline: 3px solid #1E2526; /* Creating a solid outline */
+}
+
+/* Scroll Button */
+.button{
+    background-color: #F14E4F;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 50%; /* Creating the circle */
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    bottom: 30px;
+    box-shadow: 2px 2px 5px #000000;
+    animation: FloatUp 0.5s ease-out forwards;
+    outline: 2px solid #C62127;
+}
+/* Scroll button when hovering */
+.button:hover{
+    background-color: #C62127; /* Darkening the colour when hovering */
+    outline: 2px solid #991A20;
+    color: #B3B8B9; /* Darkening the text when hovering */
+    box-shadow: 2px 2px 7px #000000; /* Increasing shadow size when hovering */
+}
+.TopScroller{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+/* Bottom Bar */
+.bottombar{
+    width: 100%;
+    height: 300px;
+    background-color: #344042;
+    margin-top: 50;
+    display: block;
+    overflow: hidden; /* Removes everything after the bottom-bar */
+}
+
+/* Positioning for contact info */
+.contactinfo{
+    position: relative;
+    bottom: -20px; /* Moves the vertical position */
+    left: 0px; /* Moves the horizontal position */
+    display: inline-block;
+}
+
+/* Raha Copyright */
+.bottombar > h4{
+    padding-left: 30px;
+    color: #B3B8B9;
+    display: inline-block;
+    font-family: sans-serif;
+    transform: translateY(-130px);
+    position: relative;
+    bottom: 50px;
+}
+
+/* Phone contact styles start */
+.phoneicon{
+    width: 4%;
+    display: inline-block;
+    padding-left: 10%;
+    padding-top: 0px;
+}
+.phonestuff > p.phone{
+    color: #B3B8B9;
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 0px;
+    transform: translateY(-7px);
+}
+/* Phone contact styles end */
+
+/* e-mail contact styles start */
+.mailicon{
+    width: 4%;
+    display: inline-block;
+    padding-left: 10%;
+    padding-top: 0px;
+}
+.mailstuff > p.mail{
+    color: #B3B8B9;
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 0px;
+    transform: translateY(-5px);
+}
+/* e-mail contact styles end */
+
+/* Location contact styles start */
+.locationicon{
+    width: 4%;
+    display: inline-block;
+    padding-left: 10%;
+    padding-top: 0px;
+}
+.locationstuff > p.location{
+    color: #B3B8B9;
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 0px;
+    transform: translateY(-15px);
+}
+/* Location contact styles end */
+
+.Rahalogo{
+    width: 10%;
+    position: relative;
+    bottom: 150px;
+    left: 50px;
+}
+.taaleemlogo{
+    width: 20%;
+    position: relative;
+    bottom: 260px;
+    left: 225px;
+}
+
+/* Image Scroller */
+.ImageScroller{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.ImageScroller > img.Scroller{
+    width: 80%;
+    box-shadow: 3px 3px 10px;
+}
+
+/* Line spacers @ contact info */
+.spacer1{
+    position: relative;
+    right: 200px;
+
+}
+.spacer2{
+    position: relative;
+    right: 111px;
+}
